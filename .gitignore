@@ -1,0 +1,40 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Training artifacts
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+wandb/
+runs/
+logs/
+
+# Results (keep the folder, ignore generated plots/data)
+results/*.csv
+results/*.json
+
+# OS / editor cruft
+.DS_Store
+.idea/
+.vscode/
+*.swp
