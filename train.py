@@ -22,7 +22,7 @@ def train(
     eval_every=100,
     seed=0,
 ):
-    device = torch.device("cuda" if torch.cuda.is_available else "cpu")
+    device = torch.device("cpu")
 
     train_inputs, train_labels, val_inputs, val_labels = get_dataset(
         p=p, operation=operation, train_fraction=train_fraction, seed=seed
