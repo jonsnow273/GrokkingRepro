@@ -1,0 +1,18 @@
+# Task settings -- these define the "clock" and the operation
+p: 97                  # modulus (the clock has 97 numbers: 0 to 96)
+operation: "add"       # (a + b) mod p
+train_fraction: 0.5    # 50% of all pairs are used for training, rest hidden for validation
+
+# Model settings -- size of the transformer
+embed_dim: 128          # size of each token's "stat profile" vector
+n_heads: 4              # number of parallel attention "conversations"
+n_layers: 2             # how many attention + processing blocks are stacked
+
+# Training settings
+lr: 0.001               # learning rate -- how big each weight update step is
+weight_decay: 1.0       # the key grokking lever -- keeps nudging weights toward simpler solutions
+total_steps: 10000      # how many training steps to run
+eval_every: 100         # how often to check train/val accuracy and log it
+
+# Reproducibility
+seed: 0 
