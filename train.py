@@ -74,11 +74,19 @@ def train(
  
     return model, history
 
+import yaml
+
+def load_config(path):
+    with open(path, "r") as f:
+        config = yaml.safe_load(f)
+    return config
+
 if __name__ == "__main__":
-    model, history = train(
-        p=97,
-        operation="add",
-        train_fraction=0.5,
-        total_steps=2000,
-        eval_every=200,
-    )
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--config", type=str, required=True)
+    args = parser.parse_args()
+
+    config = load_config(args.config)
+    model, history = train(**config)
