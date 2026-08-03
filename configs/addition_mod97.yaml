@@ -11,7 +11,7 @@ n_layers: 2             # how many attention + processing blocks are stacked
 # Training settings
 lr: 0.001               # learning rate -- how big each weight update step is
 weight_decay: 1.0       # the key grokking lever -- keeps nudging weights toward simpler solutions
-total_steps: 10000      # how many training steps to run
+total_steps: 5000     # how many training steps to run
 eval_every: 100         # how often to check train/val accuracy and log it
 
 # Reproducibility

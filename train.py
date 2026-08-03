@@ -90,3 +90,8 @@ if __name__ == "__main__":
 
     config = load_config(args.config)
     model, history = train(**config)
+
+import json
+
+with open("results/history.json", "w") as f:
+    json.dump(history, f)
