@@ -74,6 +74,8 @@ Key parameters in `configs/addition_mod97.yaml`:
 
 The main output is the accuracy curve: training accuracy saturates early, validation accuracy lags and then jumps. See `notebooks/reproduce_grokking.ipynb` for the plotted results and a short writeup of what was observed, including any ablations run (varying weight decay or train fraction) and how they affected the grokking point.
 
+![Grokking accuracy curve](results/accuracy_curve.png)
+
 ## References
 
 - Power, A. et al. (2021). [*Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets*](https://arxiv.org/abs/2201.02177)
