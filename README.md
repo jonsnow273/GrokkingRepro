@@ -83,4 +83,4 @@ The main output is the accuracy curve: training accuracy saturates early, valida
 
 ---
 
-made by -- pranit bharat more 🐐
+made by -- pranit 🐐
